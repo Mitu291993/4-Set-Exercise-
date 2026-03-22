@@ -1,0 +1,147 @@
+/* =========================
+   GENERAL PAGE STYLING
+   ========================= */
+
+body {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* Sets the font for the whole page */
+
+    background-color: #eeeeee;
+    /* Light grey background behind the main content */
+
+    margin: 0;
+    /* Removes default browser margin */
+
+    padding: 100px 0;
+    /* Adds space at the top and bottom of the page */
+}
+
+
+/* =========================
+   CONSTRAIN PAGE WIDTH
+   ========================= */
+
+.container {
+    width: 800px;
+    /* Fixes the content width to 800px */
+
+    margin: auto;
+    /* Centers the container horizontally */
+
+    background: white;
+    /* White background for the content area */
+
+    padding: 30px 40px;
+    /* Adds space inside the container (top/bottom, left/right) */
+
+    border-radius: 8px;
+    /* Rounds the corners slightly */
+}
+
+
+/* =========================
+   MAIN TITLE
+   ========================= */
+
+h1 {
+    font-size: 100px;
+    /* Very large title text */
+
+    font-weight: 100;
+    /* Extra bold text */
+
+    text-align: center;
+    /* Centers the title */
+
+    color: #2ea02e;
+    /* Green color */
+
+    margin-bottom: 10px;
+    /* Space below the title */
+}
+
+
+/* =========================
+   SECTION HEADINGS
+   ========================= */
+
+h2 {
+    text-align: center;
+    /* Centers section headings */
+
+    color: #2c8f2c;
+    /* Slightly darker green */
+
+    font-size: 59px;
+    /* Large heading size */
+
+    margin-top: 20px;
+    /* Space above each section */
+}
+
+h3 {
+    color: white;
+    /* White text (used in green box) */
+
+    font-size: 35px;
+    /* Medium-large heading */
+
+    font-weight: 900;
+    /* Bold text */
+
+    margin-top: 0;
+    /* Removes space above */
+}
+
+
+/* =========================
+   PARAGRAPHS
+   ========================= */
+
+p {
+    line-height: 1.6;
+    /* Improves readability by spacing lines */
+
+    font-size: 16px;
+    /* Standard readable text size */
+
+    color: #151515;
+    /* Dark grey text */
+}
+
+
+/* =========================
+   DID YOU KNOW BOX
+   ========================= */
+
+.didyouknow {
+    background-color: #4CAF50;
+    /* Green background */
+
+    color: white;
+    /* Default text color inside the box */
+
+    padding: 20px;
+    /* Space inside the box */
+
+    border-radius: 12px;
+    /* Rounded corners */
+
+    margin: 30px 0;
+    /* Space above and below the box */
+}
+
+.didyouknow p {
+    color: white;
+    /* Ensures paragraph text inside stays white */
+}
+
+
+/* =========================
+   SPACING BETWEEN SECTIONS
+   ========================= */
+
+section {
+    margin-top: 20px;
+    /* Adds space between each section */
+}
