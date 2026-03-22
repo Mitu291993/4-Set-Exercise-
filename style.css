@@ -1,0 +1,65 @@
+/* ===== PAGE STYLING ===== */
+body {
+    /* Sets the main font for the entire website */
+    font-family: Georgia, serif;
+
+    /* Removes default browser margin around the page */
+    margin: 0;
+}
+
+
+/* ===== HEADER SECTION ===== */
+header {
+    /* Light grey background for header */
+    background-color: #d3d3d3;
+
+    /* Adds space inside the header */
+    padding: 20px;
+}
+
+
+/* ===== NAVIGATION LINKS ===== */
+nav a {
+    /* Adds spacing between each link */
+    margin-right: 10px;
+
+    /* Sets link text color to blue */
+    color: rgb(8, 8, 244);
+}
+
+
+/* ===== MAIN CONTENT AREA ===== */
+main {
+    /* Adds space inside the main content */
+    padding: 20px;
+}
+
+
+/* ===== CONTENT SECTIONS ===== */
+section {
+    /* Adds space between sections (ingredients, instructions, etc.) */
+    margin-bottom: 20px;
+}
+
+
+/* ===== TIP / ASIDE BOX ===== */
+aside {
+    /* Light grey background to highlight the tip */
+    background-color: #d3d3d3;
+
+    /* Space inside the tip box */
+    padding: 15px;
+
+    /* Space above and below the box */
+    margin: 20px 0;
+}
+
+
+/* ===== FOOTER SECTION ===== */
+footer {
+    /* Light grey background for footer */
+    background-color: #d3d3d3;
+
+    /* Adds space inside the footer */
+    padding: 20px;
+}
