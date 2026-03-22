@@ -1,147 +1,104 @@
-/* =========================
-   GENERAL PAGE STYLING
-   ========================= */
-
-body {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    /* Sets the font for the whole page */
-
-    background-color: #eeeeee;
-    /* Light grey background behind the main content */
-
+/* RESET: remove default margin/padding */
+* {
     margin: 0;
-    /* Removes default browser margin */
-
-    padding: 100px 0;
-    /* Adds space at the top and bottom of the page */
+    padding: 0;
+    box-sizing: border-box; /* Include padding/border in element width */
 }
 
-
-/* =========================
-   CONSTRAIN PAGE WIDTH
-   ========================= */
-
-.container {
-    width: 800px;
-    /* Fixes the content width to 800px */
-
-    margin: auto;
-    /* Centers the container horizontally */
-
-    background: white;
-    /* White background for the content area */
-
-    padding: 30px 40px;
-    /* Adds space inside the container (top/bottom, left/right) */
-
-    border-radius: 8px;
-    /* Rounds the corners slightly */
-}
-
-
-/* =========================
-   MAIN TITLE
-   ========================= */
-
-h1 {
-    font-size: 100px;
-    /* Very large title text */
-
-    font-weight: 100;
-    /* Extra bold text */
-
-    text-align: center;
-    /* Centers the title */
-
-    color: #2ea02e;
-    /* Green color */
-
-    margin-bottom: 10px;
-    /* Space below the title */
-}
-
-
-/* =========================
-   SECTION HEADINGS
-   ========================= */
-
-h2 {
-    text-align: center;
-    /* Centers section headings */
-
-    color: #2c8f2c;
-    /* Slightly darker green */
-
-    font-size: 59px;
-    /* Large heading size */
-
-    margin-top: 20px;
-    /* Space above each section */
-}
-
-h3 {
-    color: white;
-    /* White text (used in green box) */
-
-    font-size: 35px;
-    /* Medium-large heading */
-
-    font-weight: 900;
-    /* Bold text */
-
-    margin-top: 0;
-    /* Removes space above */
-}
-
-
-/* =========================
-   PARAGRAPHS
-   ========================= */
-
-p {
-    line-height: 1.6;
-    /* Improves readability by spacing lines */
-
-    font-size: 16px;
-    /* Standard readable text size */
-
-    color: #151515;
-    /* Dark grey text */
-}
-
-
-/* =========================
-   DID YOU KNOW BOX
-   ========================= */
-
-.didyouknow {
-    background-color: #4CAF50;
-    /* Green background */
-
-    color: white;
-    /* Default text color inside the box */
-
+/* PAGE STYLE */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;       /* Line spacing */
     padding: 20px;
-    /* Space inside the box */
-
-    border-radius: 12px;
-    /* Rounded corners */
-
-    margin: 30px 0;
-    /* Space above and below the box */
+    max-width: 1000px;
+    margin: auto;           /* Center page */
+    background-color: #cfcfcf; /* Light grey background */
 }
 
-.didyouknow p {
-    color: white;
-    /* Ensures paragraph text inside stays white */
+/* HEADER */
+header {
+    text-align: center;  /* Center title + nav */
+    margin-bottom: 20px;
 }
 
-
-/* =========================
-   SPACING BETWEEN SECTIONS
-   ========================= */
-
-section {
-    margin-top: 20px;
-    /* Adds space between each section */
+/* TITLE */
+h1 {
+    font-size: 80px;      /* Large title */
+    margin-bottom: 2px;
 }
+
+/* NAVIGATION */
+nav ul {
+    list-style: none;         /* Remove bullets */
+    display: flex;            /* Horizontal layout */
+    justify-content: center;  /* Center nav links */
+    gap: 80px;                /* Space between links */
+}
+
+nav a {
+    text-decoration: underline;
+    color: blue;
+    font-weight: normal;
+}
+
+/* INTRO SECTION */
+.intro {
+    margin-bottom: 10px;
+}
+
+/* FIRST INTRO: text + image side by side */
+.intro:first-of-type {
+    display: flex;
+    gap: 10px;
+}
+
+/* TEXT */
+.text {
+    flex: 10; /* Text wider than image */
+}
+
+/* SIDE IMAGE */
+.side-image {
+    flex: 1;       /* Image smaller than text */
+    width: 100%;
+    height: auto;
+}
+
+/* GALLERY: container for all rows */
+.gallery {
+    display: flex;
+    flex-direction: column; /* Stack rows vertically */
+    gap: 10px;              /* Space between rows */
+}
+
+/* EACH ROW: flex for images/videos */
+.gallery-row {
+    display: flex;  /* Row layout */
+    gap: 10px;      /* Space between items */
+}
+
+/* ALL GALLERY ITEMS */
+.gallery-item {
+    height: 200px;  /* Fixed height */
+}
+
+/* MEDIA INSIDE ITEMS: images and videos */
+.gallery-item img,
+.gallery-item video {
+    width: 100%;        /* Fill container width */
+    height: 100%;       /* Fill container height */
+    object-fit: cover;  /* Crop to fit container without stretching */
+    display: block;     /* Remove default inline-block spacing */
+}
+
+/* ROW 1: first item long (can be video), second short */
+.gallery-row:nth-child(1) .long { flex: 2; }
+.gallery-row:nth-child(1) .short { flex: 1; }
+
+/* ROW 2: first item short, second long */
+.gallery-row:nth-child(2) .short { flex: 1; }
+.gallery-row:nth-child(2) .long { flex: 2; }
+
+/* ROW 3: first item long, second short */
+.gallery-row:nth-child(3) .long { flex: 2; }
+.gallery-row:nth-child(3) .short { flex: 1; }
